@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+      <h1>SLIDE</h1>
+   
+    <style>
+
+        a{
+          text-align: center;
+          font-size: 25px;
+        }
+
+        h1{
+          font-size: 30px;
+          color: #000;
+          text-align: center;
+        }
+        html, body {
+          position: relative;
+          height: 80%;
+        }
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color:#000;
+          margin: 0;
+          padding: 0;
+        }
+        .swiper-container {
+          width: 100%;
+          height: 100%;
+        }
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+    
+          
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+      </style>
+    </head>
+    <body>
+      
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/distante.jpg"></div>
+          <div class="swiper-slide"><img src="./img/simpsons.jpg"></div>
+          <div class="swiper-slide"><img src="./img/efeito.jpg"></div>
+          <div class="swiper-slide"><img src="./img/cave.jpg"></div>
+        </div>
+        
+        <div class="swiper-pagination"></div>
+      </div>
+    
+      
+      <script src="./js/swiper.min.js"></script>
+    
+      
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
+      <hr>
+
+      <h1>GALERIA DE FOTOS</h1>
+      <a href="img/game.jpg" data-title="Legenda da foto" data-lightbox="foto1">
+        <img src="img/game.jpg" width="200">
+      </a>
+      <script src="js/lightbox.min.js"></script>
+      <script src="js/lightbox-plus-jquery.min.js"></script>
+
+      <a href="img/flash.jpg" data-title="Legenda da foto" data-lightbox="foto1">
+        <img src="img/flash.jpg" width="200">
+      </a>
+      <script src="js/lightbox.min.js"></script>
+      <script src="js/lightbox-plus-jquery.min.js"></script>
+
+      <a href="img/cr7.jpg" data-title="Legenda da foto" data-lightbox="foto1">
+        <img src="img/cr7.jpg" width="200">
+      </a>
+      <script src="js/lightbox.min.js"></script>
+      <script src="js/lightbox-plus-jquery.min.js"></script>
+
+      <a href="img/messi.jpg" data-title="Legenda da foto" data-lightbox="foto1">
+        <img src="img/messi.jpg" width="200">
+      </a>
+      <script src="js/lightbox.min.js"></script>
+      <script src="js/lightbox-plus-jquery.min.js"></script>
+
+      <a href="img/pyong.jpg" data-title="Legenda da foto" data-lightbox="foto1">
+        <img src="img/pyong.jpg" width="200">
+      </a>
+      <script src="js/lightbox.min.js"></script>
+      <script src="js/lightbox-plus-jquery.min.js"></script>
+
+      <a href="img/harry.jpg" data-title="Legenda da foto" data-lightbox="foto1">
+        <img src="img/harry.jpg" width="200">
+      </a>
+      <script src="js/lightbox.min.js"></script>
+      <script src="js/lightbox-plus-jquery.min.js"></script>
+
+      <br>
+      <br>
+      <br>
+      <a href="loja.html">Clique aqui para ir diretamente para a nossa loja!</a>
+      <br>
+      <br>
+      <br>
+    </body>
+    </html>
+    

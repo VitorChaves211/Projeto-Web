@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="stylesheet" href="./css/animate.css">
+    <style>
+
+
+
+        a{
+            font-size: 20px;
+        }
+        h1{
+            text-align: center;
+            font-size: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        span{
+            font-family: Arial;
+            font-size: 25px;
+            align-items: center;
+            align-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        img{
+            position: relative;
+            right: -40%;
+            padding: 7px;
+            align-items: center;
+            align-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        
+    </style>
+</head>
+<body class="body">
+
+    <h1 class="wow flash">BEM VINDO À NOSSA LOJA VIRTUAL!</h1>
+    <hr>
+    <div class="img">
+        <img width="250" id="img" data-zoom-image="./img/nike.jpg" src="./img/nike.jpg">
+        <div>
+        <span class="wow flash">
+            Produto: tênis
+        </span>
+    </div>
+<div>
+    <span class="wow flash">
+        Valor: R$ 120,00
+    </span>
+</div>
+
+<div>
+    <span class="wow flash">
+        Marca: Nike
+    </span>
+</div>
+    </div>
+
+    <br>
+    <hr>
+    <!--2º IMAGEM-->
+    <div>
+        <img width="250" id="im" data-zoom-image="./img/gucci.jpg" src="./img/gucci.jpg">
+        <div>
+        <span class="wow flash">
+            Produto: Camisa
+        </span>
+    </div>
+<div>
+    <span class="wow flash">
+        Valor: R$ 210,00
+    </span>
+</div>
+
+<div>
+    <span class="wow flash">
+        Marca: Gucci
+    </span>
+</div>
+    </div>
+
+    <br>
+    <hr>
+
+    <div>
+        <img width="250" id="i" data-zoom-image="./img/xiaomi.png" src="./img/xiaomi.png">
+        <div>
+        <span class="wow flash">
+            Produto: Celular
+        </span>
+    </div>
+<div>
+    <span class="wow flash">
+        Valor: R$ 2.100,00
+    </span>
+</div>
+
+<div>
+    <span class="wow flash">
+        Marca: Xiaomi
+    </span>
+</div>
+    </div>
+
+    <br>
+    <hr>
+
+    <div>
+        <img width="250" id="ia" data-zoom-image="./img/headphone.jpg" src="./img/headphone.jpg">
+        <div>
+        <span class="wow flash">
+            Produto: HeadFone
+        </span>
+    </div>
+<div>
+    <span class="wow flash">
+        Valor: R$ 230,00
+    </span>
+</div>
+
+<div>
+    <span class="wow flash">
+        Marca: Razer
+    </span>
+</div>
+    </div>
+
+    <br>
+    <hr>
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/jquery.elevatezoom.js"></script>
+    <script src="./js/wow.min.js"></script>
+   
+    <script>
+        new WOW().init()
+    </script>
+    <script>
+        $('#img, #im, #i, #ia').elevateZoom({
+        zoomType: "inner",
+        cursor: "crosshair",
+        zoomWindowFadeIn: 500,
+        zoomWindowFadeOut: 750
+    });
+    </script>
+</body>
+</html>
